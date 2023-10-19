@@ -1,0 +1,23 @@
+{
+    "version": "0.2",
+    "ignorePaths": [],
+    "dictionaryDefinitions": [],
+    "dictionaries": [],
+    "words": [
+        "Benfica",
+        "Brann",
+        "Eintracht",
+        "FIFA",
+        "Germain",
+        "Häcken",
+        "Pölten",
+        "Praha",
+        "Rosengård",
+        "Slavia",
+        "UEFA"
+    ],
+    "ignoreWords": [
+        "coeff"
+    ],
+    "import": []
+}
