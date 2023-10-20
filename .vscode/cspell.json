@@ -17,6 +17,7 @@
         "UEFA"
     ],
     "ignoreWords": [
+        "Probs",
         "coeff"
     ],
     "import": []

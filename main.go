@@ -11,11 +11,23 @@ func main() {
 	fmt.Println()
 
 	d := newDrawer(p, 42)
+	s := newStats(p)
 
-	for i := 0; i < 20; i++ {
+	i := 0
+	for {
 		x := d.draw()
+		s.add(x)
+		i++
 
-		d.printGroups(os.Stdout, x)
+		if i > 1000000 {
+			break
+		}
+	}
+
+	for _, t := range p {
+		id := t.id
+		fmt.Printf("%s: ", id)
+		printProbs(os.Stdout, s.getProbs(id))
 		fmt.Println()
 	}
 }
